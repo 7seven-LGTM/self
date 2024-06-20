@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secret garden</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo" style="margin-bottom: -1px;"><img src="图片\未标题-22.png"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
+                <li class="magical btn nav" onclick="window.location.href='./work.html'">Work</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
+                    <li class="magical btn nav" onclick="window.location.href='./work.html'">Work</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+        <div class="work">
+            <div class="card-list">
+                <div class="magical item">
+                    <a href="https://docs.qq.com/pdf/DS1NDYnFVcFpwcEZW" target="_blank">
+                        <div class="dark"><img class="cover" src="图片\1.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">艺同AI</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-assets">App</div>
+                            </div>
+                            <div class="desc">随时随地，想画就画</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://docs.qq.com/pdf/DS3BIT01TUWZ1SERF" target="_blank">
+                        <div class="dark"><img class="cover" src="图片\3.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">盲盒派对</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-assets">App</div>
+                            </div>
+                            <div class="desc">网红集散地，派对app</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://docs.qq.com/pdf/DS3hOUGVSZ1BCTmRm?" target="_blank">
+                        <div class="dark"><img class="cover" src="图片\2.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">跳枣置物</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-assets">App</div>
+                            </div>
+                            <div class="desc">给旧物以重生</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://docs.qq.com/pdf/DS1FvamJIR0h6T0Nn?" target="_blank">
+                        <div class="dark"><img class="cover" src="图片\5.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">Web</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-web">Web</div>
+                            </div>
+                            <div class="desc">中城商发，跳枣erp，cuex metal ag贸易</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://docs.qq.com/pdf/DS25qcGFhZFFFZHhI" target="_blank">
+                        <div class="dark"><img class="cover" src="图片\6.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">其他</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-app">Other</div>
+                            </div>
+                            <div class="desc">插画，海报，ip，aigc运用</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <div>© 2024 seven</div>
+            </div>
+        </div>
+        <div class="widget">
+            <div class="shape-light"></div>
+            <div class="shape-star">
+                <div class="rising-stars rising-stars-visible">
+                    <div style="height:1px;width:1px"></div>
+                    <div style="height:2px;width:2px"></div>
+                    <div style="height:1px;width:1px"></div>
+                </div>
+            </div>
+            <div class="shape-earth"></div>
+        </div>
+</body>
+<script>
+    window.addEventListener("mousemove", function (e) {
+        document.querySelectorAll(".magical").forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const offsetY = e.clientY - rect.top;
+            element.style.setProperty("--mouse-x", `${offsetX}px`);
+            element.style.setProperty("--mouse-y", `${offsetY}px`);
+        });
+    });
+</script>
+<script src="./js/main.min.js"></script>
+</html>
